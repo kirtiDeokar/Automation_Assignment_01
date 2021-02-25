@@ -5,7 +5,7 @@ Background: Navigation to the url
 Given User navigates to the home application url
 
 Scenario: Verify URL of the landing page
-Then User should be able to redirected to the URL "http://automationpractice.com/index.php"
+Then User should be able to redirected to the landing page's URL
 
 Scenario: Validate that title of the Landing Page should be "My Store"
 

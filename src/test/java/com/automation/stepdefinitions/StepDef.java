@@ -80,10 +80,10 @@ public class StepDef {
 		scn.log("Browser navigated to URL: " + base_url);
 	}
 
-    @Then("User should be able to redirected to the URL {string}")
-    public void user_should_be_able_to_redirected_to_the_url(String Url) {
+    @Then("User should be able to redirected to the landing page's URL")
+    public void user_should_be_able_to_redirected_to_the_landing_page_s_url() {
     	
-    	landingPageObjects.ValidateLandingPageUrl(Url);
+    	landingPageObjects.ValidateLandingPageUrl();
     }
     	
     @Then("User should be on Lading Page and title of the page should be {string}")

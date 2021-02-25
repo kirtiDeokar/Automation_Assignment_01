@@ -26,11 +26,15 @@ public class LandingPageObjects {
 		this.driver=driver;
 	}
 	
-	public void ValidateLandingPageUrl(String expected_url) {
-		//String expected_url = url;
-		String actual_url = driver.getCurrentUrl();
-        Assert.assertEquals("Page Url is verified:"+ expected_url, actual_url);
+	//****************METHODS*******************
+	
+	public void ValidateLandingPageUrl() {
+		String expected_url = "http://automationpractice.com/index.php";
+		
+		String actual_url  = driver.getCurrentUrl();
+        Assert.assertEquals("Page Url is verified:" , expected_url , actual_url);
 		logger.info("Url is:"+ actual_url);
+		
 	}
 	
 	public void validatePageTitle(String expectedTitle) {
