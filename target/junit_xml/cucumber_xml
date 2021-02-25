@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="58.715">
+<testcase classname="To check the functionality of Landing Page" name="Verify URL of the landing page" time="19.16">
+<failure message="expected:&lt;[Page Url is verified:true]&gt; but was:&lt;[http://automationpractice.com/index.php]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to the home application url............................passed
+Then User should be able to redirected to the URL "http://automationpractice.com/index.php".failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Page Url is verified:true]> but was:<[http://automationpractice.com/index.php]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.automation.pages.LandingPageObjects.ValidateLandingPageUrl(LandingPageObjects.java:35)
+	at com.automation.stepdefinitions.StepDef.user_should_be_able_to_redirected_to_the_url(StepDef.java:86)
+	at ✽.User should be able to redirected to the URL "http://automationpractice.com/index.php"(classpath:features/LandingPage.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To check the functionality of Landing Page" name="Validate that title of the Landing Page should be &quot;My Store&quot;" time="20.415">
+<system-out><![CDATA[Given User navigates to the home application url............................passed
+Then User should be on Lading Page and title of the page should be "My Store".passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of Landing Page" name="Check that if the product categories WOMEN, DRESSES and T-SHIRTS are displayed on the page or not" time="18.996">
+<system-out><![CDATA[Given User navigates to the home application url............................passed
+Then product categories should be displayed on the landing page.............passed
+]]></system-out>
+</testcase>
+</testsuite>
